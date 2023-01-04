@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>/* General styles */
+        body {
+          margin: 0;
+          font-family: sans-serif;
+          background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(Bakgrund.jpg);
+          background-size: cover;
+        }
+        
+        /* Header styles */
+        header {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          padding: 1rem;
+          color: white;
+          transition: background-color 0.5s;
+        }
+        
+        header.scrolled {
+          background-color: rgba(0, 0, 0, 0.8);
+          color: white;
+        }
+        
+        header h1 {
+          margin: 0;
+          font-size: 2rem;
+          font-weight: bold;
+        }
+        
+        /* Nav styles */
+        nav {
+          display: flex;
+        }
+        
+        nav ul {
+          list-style: none;
+          margin: 0;
+          padding: 0;
+          display: flex;
+        }
+        
+        nav li {
+          margin: 0 1rem;
+        }
+        
+        nav a {
+          text-decoration: none;
+          color: white;
+          font-size: 1.2rem;
+        }
+        
+        /* Main content styles */
+        main {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          padding: 2rem;
+          color: white;
+        }
+        
+        main h2 {
+          margin: 1rem 0;
+          font-size: 2rem;
+          text-align: center;
+        }
+        
+        main p {
+          margin: 1rem 0;
+          font-size: 1.2rem;
+          line-height: 1.5;
+          text-align: justify;
+          max-width: 800px;
+        }
+        
+        /* Footer styles */
+        footer {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          padding: 1rem;
+          background-color: rgba(0, 0, 0, 0.8);
+          color: white;
+        }
+        
+        footer p {
+          margin: 0;
+          font-size: 1.2rem;
+        }
+        </style>
+    <script>// Smooth scroll to anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+          anchor.addEventListener('click', function (e) {
+            e.preventDefault();
+        
+            document.querySelector(this.getAttribute('href')).scrollIntoView({
+              behavior: 'smooth'
+            });
+          });
+        });
+        
+        // Change navbar background color on scroll
+        window.addEventListener('scroll', function () {
+          const navbar = document.querySelector('header');
+          if (window.scrollY > 50) {
+            navbar.classList.add('scrolled');
+          } else {
+            navbar.classList.remove('scrolled');
+          }
+        });
+        </script>
+  <title>Min Portfolio</title>
+</head>
+<body>
+  <header>
+    <h1>Min Portfolio</h1>
+  </header>
+  <nav>
+    <ul>
+      <li><a href="#about">Om mig</a></li>
+      <li><a href="#work">Erfarenheter</a></li>
+    </ul>
+  </nav>
+  <main>
+    <section id="about">
+      <h2>Om mig</h2>
+      <p>Hej mitt namn är Vincent Blick! Jag är 24 år gammal och väldigt data och IT intresserad. Jag är en väldigt utåtriktad person med massor av glädje i mig att dela med mig av. På min fritid tycker jag om att spela spel om jag får tid, annars så gymmar/rör jag på mig väldigt mycket och lagar samt äter väldigt mycket mat. Jag bor ensam mitt i centrum av Linköping i min Nyrenoverade 1:a.</p>      
+    </section>
+    <section id="work">
+      <h2>Kort sammanfattning av farenheter</h2>
+      <p>Jag har en tidigare arbetsbakgrund som är kanske irrelevant för eran erbjudande tjänst. Men med mina nya kunskaper inom programmeringsspråk har jag satt mig på en ny väg i min karriär.<br>
+
+      Som nämnt i mitt CV har jag lärt upp mig fullstack utveckling av eget intresse, då jag finner allt inom IT och data och den framtida utvecklingen i den digitala världen, väldigt intressant, och jag vill vara med att skapa den! Fullstack utveckling utbildningen var min biljett in i IT världen och att förvandla mina hobby kunskaper till riktiga kunskaper. Jag har själv inte alls mycket erfarenhet av att just jobba med detta sedan innan, då jag ganska nyligen blev färdig. Och jag har heller inte mycket erfarenhet av allihopa av era företags program ni kanske använder för just den här tjänsten. Men jag har läst på det jag kan för att förbereda mig så gott jag kan för att kunna göra ett sånt bra jobb som möjligt. Jag vet att det kanske är en lite större satsning på just mig då jag är ny i detta fält av jobb. Men jag hoppas att kunna en dag jobba med den här typen av jobb en vacker dag och göra det till min karriär. För jag tycker det är extremt roligt att hålla på med sånt här.<br> <br>
+      Allt inom programmering och data har intresserat mig väldigt länge. Ända sedan jag var barn har jag hållit på med serverhantering på väldigt lätt nivå då jag och mina kompisar ville ha en egen server att hosta våra spel på så vi kunde spela tillsammans och ostört. När jag var yngre var jag också med att starta upp LAN-fester på skolan som en gruppaktivitet och hjälpte då till med internet(routrar m.m). Jag och mina kompisar när vi var yngre brukade också skapa egna program, som t.ex. en digital MP3-spelare/musikspelare. <br> <br>
+      
+      Snabbspola framåt och jag får nys om Linux och vad det är för något och virtuella maskiner. Jag laddade ner både och, och började experimentera, kika runt och var allmänt nyfiken på hur det fungerade och hur annorlunda det var jämfört med Windows OS och Mac OS. Jag kom aldrig tyvärr djupare in i Linux för jag hade inte mycket användning av det för tillfället, men hoppas på att få utöka min kunskap mer inom det.<br> <br>
+      Jag senare i skolan använde en virtuell maskin installerad på min gamla skollaptop när vi behövde Mac OS för skoluppgifter i mjukvara som bara fanns tillgänglig för just Mac OS.
+      
+      Jag har också en stark bakgrund i hårdvara gällande data. Jag har under många år byggt datorer från grunden och uppdaterat hårdvara på nära och käras datorer och mina egna. Det är ett av de många roliga områdena och alltid lika spännande om det startar efter man är klar.
+      </p>
+    </section>
+  </main>
+  <footer>
+    <p>Portfolio 2023, Vincent Blick <br> +46734033354 <br> b.v.jobbmail@gmail.com</p>
+  </footer>
+</body>
+</html>
